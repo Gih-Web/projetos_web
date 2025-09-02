@@ -1,0 +1,340 @@
+/* estilo do cabeçalho*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+.header{
+background-color: #1F1F1F; /* cor de fundo */
+padding: 40px ;/* tamanho da área (do cabeçalho) */
+align-items: center;/* alinhamento dos itens */
+display: flex; /* Redimensionar*/
+justify-content: space-between;/*colocar os itens lado a lado, colocando os espaços so lado */
+}
+
+.logo{
+
+display: flex;
+align-items: center;
+color: #ffffff;
+font-size: 18; /* tamanho da fonte do texto*/
+font-weight: bold; /*fonte em negrito*/
+}
+.logo img{ /*dimensões da imagem*/ 
+    width: 80px;
+    margin-right: 10px;
+
+}
+
+/* cofiguração da barra de pesquisa*/
+.search-box{
+    flex:1;
+    max-width: 800px;/*largura máxima*/
+    margin: 0 20px;/*margem superior e lateral*/
+    border:none; /**/
+    border-radius: 100px;/*largura da borda*/
+    font-size:16px;/*tamanho do texto*/
+
+}
+
+.search-box input{ /* configuração da parte de dentro */
+
+    width: 100%; /* preencher toda a área*/
+    padding: 10px 30px 10px 15px; /*definindo o espaço cima direita, baixo, esquerda*/
+    border: none; /* borda da caixa*/
+    border-radius: 5px; /*curvatura da borda*/
+    font-size: 15px; /* tamanho da fonte do texto */
+    outline: none; /* Remove a linha de fora quando clica na caixa de texto*/
+}
+.icons{
+    display: flex; /* responsivo*/
+    gap: 40px; /*espaço entre icones*/
+    align-items: center; /*centralizar icones */
+    margin-right: 60px;
+
+}
+.icons img{ /*configurando o tamanho das imagens dos icones*/
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+
+}
+
+/*.icons:hover {
+    background-color: rgb(49, 49, 49);
+}*/
+
+
+.footer{
+    background-color: #e7e7e7; /* cor de fundo*/
+    padding: 15px 40px 15px 40px; /*dimensão*/
+    color: #1F1F1F; /* cor do texto*/
+    font-family: Arial, Helvetica, sans-serif; /* fonte dos textos*/
+}
+
+.footer-esquerdo{
+    font-weight: bold; /*colocar  texto em negrito */
+    margin: 0;
+
+}
+
+.footer-direito{
+    text-align: right; /*Texto alinhado à direito*/
+
+}
+
+.icons-sociais{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+
+}.icons-sociais img{
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s; /* animação suave*/
+}
+/*onfigurações de tela*/
+html, body{
+    height: 100%; /*ocupa 100% da altura da tela*/
+    margin: 0;/* remover as margens padrão*/
+    display: flex;
+    flex-direction: column; /*organiza em colunas*/
+
+
+}
+
+main{
+    flex: 1; /*Mandar o rodapé para baixo*/
+
+}
+
+/* configuração carrossel de banners*/
+
+.carrossel{
+    position: relative; /*posição relativa para os botões*/
+    width: 80%; /*largura do carrossel*/
+    max-width: 100%;
+    margin: 0 auto ; /* margem de 20px de todos os lados*/
+    margin-top: 20px;
+ /* border-radius: 20px; /* arredondar bordas*/
+ /* box-shadow: 0px 4px 8px; /*sombra*/
+
+}
+/*configuração dos slides do banner*/
+.slide-banner{
+    display: none; /*esconder os slides inicialmente*/
+    width: 100%; /* ocupar toda a largura do carrossel*/
+  /*border-radius: 20px; /*arredondar bordas*/
+}
+
+.slide-banner.active{
+    display: block; /* mpstrar slide ativo*/
+}
+
+/*configurando as imagens do carrossel*/
+.slide-banner img{
+    width: 100%; /* ocupar toda a largura do sliade */
+ /* border-radius: 20px; /*arredondar bordas*/
+    display: block;
+    object-fit: cover;
+}
+
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%) ;
+    background-color: rgba(0, 0, 0, 0.10);
+    color: rgb(130, 130, 130);
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 35px;
+    border-radius: 50%;
+}
+
+.next{
+    right: 10px; /* Posição à direita*/
+}
+
+.prev{
+    left: 10px;/* Posição à esquerda*/
+}
+
+/* mudar de cor qaundo o mouse passa por cima*/ 
+.prev:hover, .next:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+/* Categorias*/
+
+.categorias{
+
+    text-align: center;/* texto alinhado ao centro  */
+    margin: 40px; /*margem em volta */
+
+}
+
+/* conficurando o texto com nome categoria */
+
+.categorias h2{
+    font-family: Arial, Helvetica, sans-serif;/*tipo de fonte */
+    color: #c18c1b;/**cor da fonte  */
+    font-weight: bold;/*negrito */
+    margin-bottom: 25px; /*margem embaixo do texto */
+    text-align: left;
+    
+
+}
+
+.categorias-container{
+    display: flex;/* deixa os itens flexi*/
+    gap: 40px;/*espaço entre os itens */
+    justify-content: center; /**centraliza os itens */
+    flex-wrap: wrap;/** faz com que os itens que não couberem na tela, pulem para a proxima linha  */
+
+}
+
+.lista-categorias{
+    width: 150px; /*largura da categoria */
+    height: 150px;/*altura da gategoria */
+   /* background-color: #0d47a1; /*corde fundo */
+    border-radius: 50%; /**deixa as categoria arredondada, quem quiser em circulo deixa o valor em px*/
+    display: flex; /**flexível */
+    align-items: center; /**centraliza na vertical */
+    justify-content: center; /**centraliza os itens horizontal */
+    overflow: hidden;/** esconde o que sair da área da categoria */
+    cursor: pointer;
+
+}
+
+.lista-categorias img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+/*para texto 
+
+/*.lista-categorias img{
+   color: white; cor do texto
+   font-familly:arial
+   text-alight: center
+   padding: 10px
+
+*/
+
+.container-produtos h2{
+    color: #c18c1b;/** cor do texto */
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 25px; /**margem embaixo do texto */
+    font-size: 20px; /*tamanho da fonte */
+    font-weight: bold; /**negrito */
+    margin-left: 25px;/**margem a esquerda */
+    
+}
+
+.destaques-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px;
+}
+/**card do produto */
+
+.card-produto{
+    background-color: #cbcbcb; /**cor de fundo */
+    border-radius: 16px;
+    padding: 12px;/*espaçamento interno */
+    text-align: center;
+    cursor: pointer;/**aparece a mão ao passar o mouse */
+    transition: transform 0.3s;/**animação suave ao passar o mouse em cima  */
+}
+/**imagem do card do produto */
+
+.card-produto img{
+    max-width: 100%; /**imagem ocupa toda a largura do card  */
+    object-fit: contain;/**ajuta a imagem dentro do card */
+    height: 100px; /**altura da imagem */
+}
+
+.imagem-produto{
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    padding: 10px; /**espaço interno */
+
+}
+.card-produto h3{
+    font-size: 14px;/**tamanho da fonte */
+    color:#1F1F1F;/**cor text */
+    margin: 10px 0;/**margem encima e embaixo */
+    font-weight:  bold; /**texto normal */
+}
+
+
+/**TEXTO DA COR  */
+.label-cor{
+    font-size: 12px;
+/*  background-color: #1F1F1F;*/
+    margin: 5px;
+    text-align: left;
+    
+}
+
+.cores{
+    display: flex;
+    justify-content: left;
+    gap: 8px;
+    margin: 6px 0;
+
+}
+
+.cor{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #cccccc8f;
+
+}
+
+.cor.selecionada{
+    border: 2px solid black;
+
+}
+
+.preco-produto{
+    font-size: 12px;
+    color: #c18c1b;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 0; 
+}
+
+
+.quantidade{
+    display: flex;
+    align-items: center;
+    gap:8px ;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.quantidade button{
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ddd;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.adicionar-carrinho{
+    background-color: #ffc13b;
+    border-radius: 10px;
+    color: #1F1F1F;
+    padding: 10px;
+    font-weight: bold;
+}
+

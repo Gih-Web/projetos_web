@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!-- Cabeçalho da página-->
+    <title>Página Inicial</title>
+
+    <meta charset="UTF-8"> <!-- Reconhece o idioma brasileiro-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+</head>
+<body> <!-- Corpo da página-->
+
+    <!-- Menu superior -->
+    <header class="header">
+        <div class="logo">
+            <img src="IMG/Logo1.png" alt="Logo da Loja Nova Tendência"/>
+
+
+        </div>
+        <div class="search-box">
+            <input type="text" class="pesquisar" placeholder="Pesquisar">
+        </div>
+        <div class="icons">
+            <img src="IMG/ajuda-chat.png" alt="Chat">
+            <img src="IMG/sacola.png" alt="Carrinho">
+            <img src="IMG/usuario.png" alt="Perfil">
+        </div>
+
+    </header>
+
+    <main>
+        <!-- Carrossel de banners-->
+        <div class="carrossel">
+
+            <!-- BANNER 1-->
+            <div class="slide-banner active">
+                <img src="IMG/banner1.png" alt="">
+            </div>
+
+            <!-- BANNER 2-->
+            <div class="slide-banner">
+                <img src="IMG/banner2.png" alt="">
+            </div>
+
+            <!-- BANNER 3-->
+            <div class="slide-banner">
+                <img src="IMG/banner3.png" alt="">
+            </div>
+
+            <!-- BANNER 4-->
+            <div class="slide-banner">
+                <img src="IMG/banner4.png" alt="">
+            </div>
+
+            <div class="slide-banner">
+                <video autplay muted loop>
+                    <source src="IMG/video-banner.mp4"/>
+                </video>
+
+               
+
+            </div>
+
+             <!--Botôes do banner-->
+            <button class="prev" onclick="">&#10094</button> <!-- anterior-->
+            <button class="next" onclick="">&#10095</button> <!-- próximo-->
+                
+        </div>
+        <!-- categoria dos produtos -->
+        <section class="categorias">
+            <h2> Categorias</h2> <!-- texto-->
+            <!-- Lista com imagens das categorias-->
+
+
+            <div class="categorias-container">
+                <div class=" lista-categorias">
+                    <img src="IMG/image 4.png" alt="">
+                </div>
+            
+                <div class=" lista-categorias">
+                    <img src="IMG/image 5.png" alt="">
+                </div>
+
+                <div class=" lista-categorias">
+                    <img src="IMG/image 6.png" alt="">
+                </div>
+
+                <div class=" lista-categorias">
+                    <img src="IMG/image 7.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!--Lista de produtos -->
+
+        <section class="container-produtos">
+            <h2>Destaques</h2>
+             <!-- Área da lista de produtos-->
+            <div class="destaques-container">
+
+                <!--Card do produto 1-->
+               <div class="card-produto" onclick="">
+               <!--Local da imagem -->
+                <div class="imagem-produto">
+                    <img src="IMG/" alt=" Produtos 1">
+                </div>
+               
+               <!--Descrição do produto-->
+               <h3>Nome do produto</h3>
+               <!--Cores do produto-->
+               <p class="label-cor"> Cor:</p>
+               <div class="cores"> <!--opção de selecionar a cor-->
+                    <div class="cor" style="background-color: black;"></div>
+                    <div class="cor" style="background-color: white;"></div>
+                    <div class="cor" style="background-color: red;"></div>
+                </div>
+
+                <p class="preco-produto"> R$ 55,00</p>
+
+                <div class="quantidade">
+                    <button class="diminuir" onclick="">-</button>
+                    <span class="valor">1</span>
+                    <button class="aumentar" onclick="">+</button>
+                </div>
+
+                <button class="adicionar-carrinho" onclick=""> Adicionar ao Carrinho</button>
+</div>
+
+
+                <!--Card do produto 2-->
+               <div class="card-produto" onclick="">
+               <!--Local da imagem -->
+                <div class="imagem-produto">
+                    <img src="IMG/" alt=" Produtos 1">
+                </div>
+               
+               <!--Descrição do produto-->
+               <h3>Nome do produto</h3>
+               <!--Cores do produto-->
+               <p class="label-cor"> Cor:</p>
+               <div class="cores"> <!--opção de selecionar a cor-->
+                    <div class="cor" style="background-color: black;"></div>
+                    <div class="cor" style="background-color: white;"></div>
+                    <div class="cor" style="background-color: red;"></div>
+                </div>
+
+                <p class="preco-produto"> R$ 55,00</p>
+
+                <div class="quantidade">
+                    <button class="diminuir" onclick="">-</button>
+                    <span class="valor">1</span>
+                    <button class="aumentar" onclick="">+</button>
+                </div>
+
+                <button class="adicionar-carrinho" onclick=""> Adicionar ao Carrinho</button>
+</div>
+
+                  <!--Card do produto 3-->
+               <div class="card-produto" onclick="">
+               <!--Local da imagem -->
+                <div class="imagem-produto">
+                    <img src="IMG/" alt=" Produtos 1">
+                </div>
+               
+               <!--Descrição do produto-->
+               <h3>Nome do produto</h3>
+               <!--Cores do produto-->
+               <p class="label-cor"> Cor:</p>
+               <div class="cores"> <!--opção de selecionar a cor-->
+                    <div class="cor" style="background-color: black;"></div>
+                    <div class="cor" style="background-color: white;"></div>
+                    <div class="cor" style="background-color: red;"></div>
+                </div>
+
+                <p class="preco-produto"> R$ 55,00</p>
+
+                <div class="quantidade">
+                    <button class="diminuir" onclick="">-</button>
+                    <span class="valor">1</span>
+                    <button class="aumentar" onclick="">+</button>
+                </div>
+
+                <button class="adicionar-carrinho" onclick=""> Adicionar ao Carrinho</button>
+
+</div>
+
+                <!--Card do produto 4-->
+               <div class="card-produto" onclick="">
+               <!--Local da imagem -->
+                <div class="imagem-produto">
+                    <img src="IMG/" alt=" Produtos 1">
+                </div>
+               
+               <!--Descrição do produto-->
+               <h3>Nome do produto</h3>
+               <!--Cores do produto-->
+               <p class="label-cor"> Cor:</p>
+               <div class="cores"> <!--opção de selecionar a cor-->
+                    <div class="cor" style="background-color: black;"></div>
+                    <div class="cor" style="background-color: white;"></div>
+                    <div class="cor" style="background-color: red;"></div>
+                </div>
+
+                <p class="preco-produto"> R$ 55,00</p>
+
+                <div class="quantidade">
+                    <button class="diminuir" onclick="">-</button>
+                    <span class="valor">1</span>
+                    <button class="aumentar" onclick="">+</button>
+                </div>
+
+                <button class="adicionar-carrinho" onclick=""> Adicionar ao Carrinho</button>
+</div>
+
+
+
+            </div>
+
+
+            
+
+
+
+
+        </section>
+
+    </main>
+
+    <!--Rodapé-->
+    <footer class="footer">
+
+        <!-- Area do rodapé que ficará os textos do lado esquerdo-->
+        <div class="footer-esquerdo">
+            <p> Desenvolvido por Giovanna Evellyn Santos Silva</p>
+
+            <a href="">
+                <p>Sobre nós</p>
+            </a>
+
+            <a href="">
+                <p>Novidades</p>
+            </a>
+
+            
+
+        </div>
+
+        <!-- Area diretia com as redes sociais -->
+        
+        <div class="footer-direito">
+            <p>Conheça nossas redes sociais</p>
+            <div class="icons-sociais">
+                <a href="">
+                    <img src="IMG/instagram.png" alt="Instagram">
+
+                </a>
+
+
+                <a href="">
+                    <img src="IMG/facebook.png" alt="Facebook">
+                </a>
+
+            </div>
+
+
+        </div>
+    </footer>
+
+
+</body>
+</html>
